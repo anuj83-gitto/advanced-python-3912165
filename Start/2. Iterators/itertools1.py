@@ -11,7 +11,7 @@ _iteratorcycle = itertools.cycle(names)
 #print(next(_iteratorcycle))
 
 # use count to create a simple counter
-_itercount = itertools.count(start=5, step=5)
+_itercount = itertools.count(start=10, step=5)
 #print(next(_itercount))
 
 # accumulate creates an iterator that accumulates values
