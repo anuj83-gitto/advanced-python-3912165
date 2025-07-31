@@ -17,3 +17,17 @@ print(findname("Creed"))
 print(findname("Tom"))
 
 # Check if a number is prime
+def isprime(n):
+    if n < 2:
+        return False
+    
+    for i in range(2,n):
+        if n % i == 0:
+            print(f"{n} is not prime")
+            return False
+    print(f"{n} is prime")
+    return True
+
+print(isprime(7))
+print(isprime(10))
+print(isprime(13))
