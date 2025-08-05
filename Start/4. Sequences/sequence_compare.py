@@ -5,12 +5,15 @@ import itertools
 
 
 # define some lists
-seq1 = [1, 2, 3, 6, 10, 15, 34, 56]
+seq1 = [1, 2, 3, 6, 10, 15, 34, 56, 67]
 seq2 = [1, 2, 5, 7, 9, 18, 22, 38, 91]
-
+print(seq1<seq2)
+print(seq1>seq2)
 # define a tuple
 seq3 = (1, 2, 3, 6, 10, 15, 34, 56)
+seq7 = (1, 2, 5, 7, 9, 18, 22, 38)
 
+print(seq3==seq7) 
 # compare the sequences
 
 
@@ -23,3 +26,4 @@ seq5 = [10, 20, 30, 40, 50]
 
 
 # use the all() function to compare two arbitrary sequences
+print(all(x>=y for x,y in itertools.zip_longest(seq1, seq2, fillvalue=0)))

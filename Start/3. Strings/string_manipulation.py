@@ -16,3 +16,4 @@ test_str2 = "   This string has whitespace   "
 
 # join concatenates an iterable into a single string
 words = ["Hello", "world", "from", "Python"]
+print(" ".join(words))
